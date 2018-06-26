@@ -129,9 +129,9 @@ public class practice9 extends Activity
                                 String tmpS=format(tPicker.getCurrentHour())+"："+
                                         format(tPicker.getCurrentMinute());
                                 setTime2.setText("設定鬧鐘時間為"+tmpS+
-                                        "開始，重複間隔時間為"+times/1000+"秒");
+                                        "開始，重複間隔時間為"+times/5000+"分鐘");
                                 Toast.makeText(practice9.this,"設定鬧鐘時間為"+tmpS+
-                                                "開始，重複間格時間為"+times/1000+"秒",
+                                                "開始，重複間格時間為"+times/5000+"分鐘",
                                         Toast.LENGTH_SHORT).show();
                             }
                         })
@@ -170,7 +170,6 @@ public class practice9 extends Activity
                 AlarmManager am;
                 am = (AlarmManager)getSystemService(ALARM_SERVICE);
                 am.cancel(sender);
-                /* 眕Toast枑尨眒刉壺扢离ㄛ甜載陔珆尨腔齡笘奀潔 */
                 Toast.makeText(practice9.this,"鬧鐘時間解除",
                         Toast.LENGTH_SHORT).show();
                 setTime2.setText("目前無設定");
