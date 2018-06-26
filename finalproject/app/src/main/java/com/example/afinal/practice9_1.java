@@ -33,8 +33,6 @@ public class practice9_1 extends Activity
                             }
                         })
                 .show();
-
-
     }
 
     }
